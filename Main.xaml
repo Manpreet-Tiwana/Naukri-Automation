@@ -1,0 +1,263 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:e="clr-namespace:ExtractExcelData;assembly=ExtractExcelData" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>ExtractExcelData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>ExtractExcelData</AssemblyReference>
+      <AssemblyReference>ExtractExcelData.Core</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="603,2245" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="password" />
+      <Variable x:TypeArguments="x:String" Name="Email" />
+      <Variable x:TypeArguments="x:String" Name="excelPath" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="488,57" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">excelPath</CSharpReference>
+        </OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">"C:\\Users\\Testing\\Documents\\UiPath\\ExtractExcelData\\Credentails.xlsx"</CSharpValue>
+        </InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <e:NewActivity sap:VirtualizedContainerService.HintSize="488,57" sap2010:WorkflowViewState.IdRef="NewActivity_1">
+      <e:NewActivity.Email>
+        <OutArgument x:TypeArguments="x:String">
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">Email</CSharpReference>
+        </OutArgument>
+      </e:NewActivity.Email>
+      <e:NewActivity.ExcelPath>
+        <InArgument x:TypeArguments="x:String">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">excelPath</CSharpValue>
+        </InArgument>
+      </e:NewActivity.ExcelPath>
+      <e:NewActivity.Password>
+        <OutArgument x:TypeArguments="x:String">
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">password</CSharpReference>
+        </OutArgument>
+      </e:NewActivity.Password>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </e:NewActivity>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Jobs - Recruitment - Job Search - Empl" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,2108" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b9ecb562-d46a-4687-8297-06449fb6c697" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,1914" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b9ecb562-d46a-4687-8297-06449fb6c697" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="naukri.com" CVScreenId="7d600241-71c2-46e1-bf1d-6ae83480683d" ContentHash="eWP5kOLyZEKrCcBy9VIBDg" DesignTimeRectangle="1020, 162, 82, 40" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Login' innertext='Login' /&gt;" Guid="326c7938-554b-4861-b87e-39e2d67662b2" InformativeScreenshot="e59ba1c12751acb725ca53091a9852b1.jpg" Reference="vcswH6fI90e9st4bQdbI4w/Q5MpUS-J4UuH4mldNGsdyg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b9ecb562-d46a-4687-8297-06449fb6c697" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="naukri.com" CVScreenId="113cdb74-400f-4042-9904-bc0fce27cd94" ContentHash="q4KeTZbNKEiGJHAL4WWC3Q" DesignTimeRectangle="220, 271, 410, 44" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='err-border' placeholder='Enter your active Email ID / Username' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0a10d9bd-2d5e-44c1-9815-d6455816e5e3" InformativeScreenshot="cf50bc9cc369dd8cf0726738940380f9.jpg" Reference="vcswH6fI90e9st4bQdbI4w/WC7pwUMLLkCPYS-OO0g3cQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="b9ecb562-d46a-4687-8297-06449fb6c697" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="naukri.com" CVScreenId="113cdb74-400f-4042-9904-bc0fce27cd94" ContentHash="q4KeTZbNKEiGJHAL4WWC3Q" DesignTimeRectangle="220, 271, 410, 44" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='err-border' placeholder='Enter your active Email ID / Username' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0a10d9bd-2d5e-44c1-9815-d6455816e5e3" InformativeScreenshot="cf50bc9cc369dd8cf0726738940380f9.jpg" Reference="vcswH6fI90e9st4bQdbI4w/WC7pwUMLLkCPYS-OO0g3cQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">Email</CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.Text>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT(1)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="b9ecb562-d46a-4687-8297-06449fb6c697" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="naukri.com" CVScreenId="113cdb74-400f-4042-9904-bc0fce27cd94" ContentHash="e6oBfWWg_0i6ItcrbIX_Xg" DesignTimeRectangle="220, 370, 410, 44" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='' placeholder='Enter your password' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ff2ee9ae-e2bf-4d9e-91fd-fc3548c15b51" InformativeScreenshot="12617ca04d3eff7e345e0a31c142a27b.jpg" Reference="vcswH6fI90e9st4bQdbI4w/HyI63emQXEKUHS2jwqBNPg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">password</CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.Text>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b9ecb562-d46a-4687-8297-06449fb6c697" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="naukri.com" CVScreenId="113cdb74-400f-4042-9904-bc0fce27cd94" ContentHash="yxiZMDd_SEiihMtT6jPdjg" DesignTimeRectangle="220, 457, 410, 40" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="90f44da6-2e81-4edf-9621-61a9f475afef" InformativeScreenshot="886545da2da83783e2fed633053c96ec.jpg" Reference="vcswH6fI90e9st4bQdbI4w/oRCcbYY56kK7f_kYPx47pA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State 'Manpreet Kaur'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,756" sap2010:WorkflowViewState.IdRef="NCheckState_1" IsLoose="True" Version="V5">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">"Successfully login"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,182" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw sap:VirtualizedContainerService.HintSize="416,118" sap2010:WorkflowViewState.IdRef="Throw_1">
+                    <InArgument x:TypeArguments="s:Exception">
+                      <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">new System.Exception("Login with valid credentails")</CSharpValue>
+                    </InArgument>
+                  </Throw>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="naukri.com/mnjuser/homepage" CVScreenId="476d2c21-842b-4469-9351-b0c7838a58f3" ContentHash="yiw-NkieH0ymYv-cTzfASg" CvTextArea="72, 354, 112, 19" CvTextArgument="Manpreet Kaur" CvType="Text" DesignTimeRectangle="29, 352, 198, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='info__heading' tag='DIV' /&gt;" Guid="a04de491-f4e5-491b-8c31-d404bdbb5327" InformativeScreenshot="c5bf03becdd390a882f1ca1a0852596e.jpg" Reference="vcswH6fI90e9st4bQdbI4w/9Xphc1Kiw0KacuPid6CnvA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Mynaukri' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1616, 868" BrowserType="Chrome" ContentHash="4hSnLZkqzkyWu1ufTXQFMQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUzSURBVGhDtZrfbxRVFMf7J/Af4MtsH3yTxkiIRp58MaHx0c62+CJYkED8UZMaqIFGjT+oYlJKxLZWBJR2RRTBSpu0NYKCK5hYEKU2QLARWKEz087Przm3O+vsvbOzM3Nnb/J5OXN35nzvnDPnnts2PbH9ySZZVndgVXOHtlFRjb3NeaOQy2tzOVUr5fI6/keby+X1SZqjqNrG5o6lB/j7pEEwxIWczrUbu8ipakcTUZQVIxjqUXFcWGFpBtMIEQxRNMjxatqNXfxzoxAMYdDK5FS9KDysQSiqNhf3bQgGHiVvdMRZdbV3CUOnbIxN2eg6YArXE6PqpZyqt/L+8AiGILl2jZJUvDnHKwMm+PHbvCvMS0WdkBIMSZ1fv8Pgfa+M98csYX4qIkQIBua8qrcKN6lBZ5+4+v4YP28L89NCocz7GSpgJWHrx7xPlIBzs9Fh1LLJEGw1UfVSWGILAnIqq5jiDWpATtzTPd53NroGxGSm+b2fmExcimQv8v5WOx8z7nm6BpYFEaNT1eFDju8bs6rmpRAAJa/3hApgoRPyg7hQMveOmCxx6ZMatNPnlRdIo3PvsnCfuqh6aXVHaZUggEq5MFkCWnFyPGoEhSYh+BYyWX0ePlRqjbQCgm9hRYCqbRQmpYDChQpY3JFaQOAt+OEjvc+hahxn1YNDRgBt45mALMKns2+Z9y3WkBQACqNMwufGP/HDJjg2dMsJoGaoSclrffyFpKQZVMhaNieoxCGQ7025vCbTErLPZZIxfsGRDh2fZlX7ggQk2jrwRO1G/UHJTQUu0d4nBtT40BdIuJCEKAGNcryCqpcaJoCqcMMcDyAtgL4kwXH1houeIRMPPiPObQTUvMTe+4dBCekP6odf7DfRfdDCywMm1mwS52eNdBKTAGPZwwcFCy/tJ+dNvDZs4o3DFnZ/bKFls/ibrGBJrLCjQPFiXEjARydttuKvHjSxe8TCm0cs9B2z0H/cwrufW3j4uYblwqR0IVu71WCd185BE3tGLLx11MJ7oxb2f2lh8Bsbh76zMTJu46md2Xz7g7BCJruVoGR9od9kbeLbRy22lR44YWPwlI1Pz9g4NmXjxA8Ovj3vsD0T/3sZ2FaCNkT8haQ8ssXA64cs7CtYOPCVheHTNg5P2BidtvH1WYdV36mLDs7Ouuj+MHkbWQvaiJa303LbCWLd8wZLZHL+yISNwozDnD/zs4vpSw5+nHXxyx8u6xfe+SyT8yLW4DMBSn6xJ2RCYh7bZmD4tIXCjI2T58h5BzO/OvjpsouLf7qYnXdx7ZaHm7c9FKZtrJEodBQ+FQEsjCTrgc/j2w3m3ESx7PwVF5euubh83cVc2fnb94DFJaBtT/rE9s+IKk19Vm+BWLvFwPHvbVz4fcX5K9dd/LXg4dYdD3fuA9oSYDtS/cBgVVOf9Vsg1m01MFl0cPWmh/kFD3/f9XB30YO+DNjl/mf9jnQCgid0FQFZvwXi0W0GS96Fkod/NQ+GCTiB5i2NAKWtxsGWTxYNfpCHnjVYEi+ZgFt23m/9kwpQ8voc768goPzXmMxCyYcKmj9SCoh3uMtESFbnWlBzEzx4SSSgxl9rBIOP0pZtPvgERfDXasHHfSwBjRThn2bz9jCinK8rgMip91sbkRMbuutW4ZLy9Eq1jUIwhFE+vZNqfJJhFMMSNgzBEEWjQipAiZ7BPzcKwVCPlc/s4lDIw2VgjtO/MfDPq4dgiAsJKX9uZQrfZFrHfQRDGnwxikrtKfUWwkFBiWzNea1Ac2iujNNB/gOhsBY/JxYPUAAAAABJRU5ErkJggg==" InformativeScreenshot="2606361fa2cafed18b2027f4a81e6bdc.jpg" Reference="vcswH6fI90e9st4bQdbI4w/bMZOeeKfN0GPl2wEluRtxQ" Selector="&lt;html app='chrome.exe' title='Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com' /&gt;" Url="https://www.naukri.com/" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

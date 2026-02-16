@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="e6oBfWWg_0i6ItcrbIX_Xg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="naukri.com" CVScreenId="113cdb74-400f-4042-9904-bc0fce27cd94" DesignTimeRectangle="220, 370, 410, 44" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='' placeholder='Enter your password' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ff2ee9ae-e2bf-4d9e-91fd-fc3548c15b51" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="12617ca04d3eff7e345e0a31c142a27b.jpg" xmlns="">0ubisVad7xUeY8aOujqyF2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

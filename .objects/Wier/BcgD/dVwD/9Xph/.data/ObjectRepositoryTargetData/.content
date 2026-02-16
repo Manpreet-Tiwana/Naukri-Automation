@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yiw-NkieH0ymYv-cTzfASg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="naukri.com/mnjuser/homepage" CVScreenId="476d2c21-842b-4469-9351-b0c7838a58f3" CvTextArea="72, 354, 112, 19" CvTextArgument="Manpreet Kaur" CvType="Text" DesignTimeRectangle="29, 352, 198, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='info__heading' tag='DIV' /&gt;" Guid="a04de491-f4e5-491b-8c31-d404bdbb5327" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Mynaukri' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c5bf03becdd390a882f1ca1a0852596e.jpg" xmlns="">0hvJxH0-dfk-eetJpfe224A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

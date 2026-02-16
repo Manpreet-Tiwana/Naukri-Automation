@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yxiZMDd_SEiihMtT6jPdjg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="naukri.com" CVScreenId="113cdb74-400f-4042-9904-bc0fce27cd94" DesignTimeRectangle="220, 457, 410, 40" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="90f44da6-2e81-4edf-9621-61a9f475afef" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="886545da2da83783e2fed633053c96ec.jpg" xmlns="">0pSTiPcQA1EaAPaV1vCfqmA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
